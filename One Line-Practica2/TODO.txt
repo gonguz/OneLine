@@ -1,0 +1,23 @@
+ESCALADO: 
+	-Para el GAMEPLAY: tenemos un TOP CANVAS y un BOT CANVAS para el UI, estos se escaclan a traves de las anclas y demás. Para el espacio de 
+juego hay que:
+
+Obtener el tamaño de la pantalla del movil actual. 
+
+Obtener el tamaño de cada canvas TOP y BOT. Estos se ajustan a lo ancho, toda la pantalla, por lo que el ancho lo tenemos. Y con una regla de 
+tres (ancho x alto (del sprite original, que está en la resolucion referencia 720x1280) y ancho x altode la pantalla actual)
+obtenemos el alto en la resolucion esa.
+
+Una vez tenemos el alto de los dos canvas (TOP y BOT) podemos averiguar el ALTO que nos queda para el espacio de juego: restar alto de la pantalla menos 
+la suma del alto de los dos canvas.
+
+Con otra regla de tres y restando lo que ocupa la imagen de los CIRCULILLOS obtenemos el ANCHO del espacio de juego.
+
+Luego ver el tamaño del tablero (6x5 o 6x8) para ver cuantos pixeles ocupan cada tile.
+
+Los tiles tiene que aparecer centrados en la pantalla.
+
+
+
+
+
